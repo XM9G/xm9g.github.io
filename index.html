@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XM9G</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/19da31ded3.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+.headingthing {
+       margin: 0;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       margin-right: -50%;
+       transform: translate(-50%, -50%);
+       text-align: center;
+       background: #000000;
+       padding: 10px;
+       font-size: 30px;
+       border-radius: 5px;
+       opacity: 90%;
+       color: white;
+       font-family: 'Lexend Deca', sans-serif;
+       box-shadow: 0px 0px 10px black;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.text {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #000000;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background-image: url('images/melbournesunset.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.counterlink{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.fa-brands:hover {
+    opacity: 0.7;
+}
+
+.fa-brands {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    font-size: xx-large;
+    padding: 1px 1px;
+}
+
+.button {
+    padding: 1px 1px
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    display: inline;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #000000;
+    border-radius: 5px;
+    color: white;
+    opacity: 90%;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+</style>
+
+<body>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="Games.html">Games</a></li>
+            <li><a href="sites.html">Cool websites I found</a></li>
+        </ul>
+    </div>
+
+    <div class="headingthing"><h1>Hi, I'm XM9G</h1>
+        <p>
+            That is all you need to know.
+        </p>
+
+        <div class="links">
+            <a href="https://www.youtube.com/c/XM9GG" class="fa-brands fa-youtube"></a>
+            <a href="https://github.com/XM9G" class="fa-brands fa-github"></a>
+            <a href="https://xm9g.itch.io" class="fa-brands fa-itch-io"></a>
+            <button onclick="copyXbox()" class="fa-brands fa-xbox"></button>
+            <button onclick="copySteam()" class="fa-brands fa-steam"></button>
+            <button onclick="copyDiscord()" class="fa-brands fa-discord"></button>
+            <script>
+                function copyXbox() {                    
+                    alert("Xbox username: XM9G")
+                }
+                function copySteam() {
+                    alert("Steam Username: XM9G")
+                }
+                function copyDiscord() {
+                    alert("Discord Username: XM9G#1511")
+                }
+            </script>
+        </div>
+
+       <!-- <div class="counter">
+            <div align='center'><a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/c.php?d=9&id=135796&s=1' border='0' alt='Free Website Hit Counter'></a><br / ></div>
+            
+        </div>
+
+    </div>
+    <div class='counterlink'>
+        <small><a href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter">Free website hit counter</a></small>
+    </div> -->
+
+        
+    <!-- <div class="text">
+        <p>
+            hi
+        </p>
+    </div> -->
+</body>
+</html>
