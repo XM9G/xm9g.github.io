@@ -2,12 +2,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>XM9G</title>
-    <link rel="icon" type="image/x-icon" href="HOT.png">
+    <title>Longest Call | XM9G</title>
+    <link rel="icon" type="image/x-icon" href="Images/call/HOT.png">
     <script src="https://kit.fontawesome.com/19da31ded3.js" crossorigin="anonymous"></script>
 </head>
 
 <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    
     .headingthing {
        margin: 0;
        position: absolute;
@@ -34,9 +37,44 @@ body {
     background-attachment: fixed;
 
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    display: inline;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #000000;
+    border-radius: 5px;
+    color: white;
+    opacity: 90%;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
 </style>
 
 <body>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <!-- <li><a href="Games.html">Games</a></li> -->
+            <li><a href="sites.html"><i class="fa-solid fa-ethernet"></i> Cool websites I found</a></li>
+            <li><a href="favgames.html"><i class="fa-solid fa-gamepad"></i> Games I play</a></li>
+            <li><a href="longestcall.html"><i class="fa-solid fa-phone"></i> Longest Call</a></li>
+        </ul>
+    </div>
+
     <div class="headingthing">
     <h1>Time since Longest call started:</h1>
     <iframe src="https://free.timeanddate.com/countdown/i8enp0g9/n152/cf12/cm0/cu4/ct0/cs0/ca0/co0/cr0/ss1/cac000/cpcfff/pc36393f/tcfff/fs200/szw576/szh243/iso2022-05-28T17:52:10" allowtransparency="true" frameborder="0" width="393" height="104"></iframe>
