@@ -51,3 +51,19 @@ li a {
     font-family: 'Lexend Deca', sans-serif;
     
 }
+
+a:link {
+    text-decoration: none;
+    cursor:url("curser.png"), default;;
+    color: white
+}
+
+a:visited {
+    text-decoration: none;
+    color: white
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
