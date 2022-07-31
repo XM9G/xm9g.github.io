@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<body>
+    <h1><?php
+        // XML example
+        $xml    = file_get_contents("http://api.whatpulse.org/user.php?user=1375166&formatted=yes&format=json");
+        $result = @simplexml_load_string($xml);
+        if(!empty($result->error))
+        {
+          echo "Something went wrong: ".$result->error;
+        }
+        else
+        {
+          $userid   = $result->UserID;
+          $username = $result->AccountName;
+          $joined   = $result->DateJoined;
+          echo "User ".$username." holds userid ".$userid." and joined WhatPulse on ".$joined;
+        }
+      ?></h1>
+</body>
