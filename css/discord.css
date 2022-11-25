@@ -67,3 +67,9 @@ a:hover {
     text-decoration: underline;
     color: white;
 }
+
+.times {
+    text-align: left;
+    margin-left: 20px;
+    
+}
