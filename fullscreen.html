@@ -11,12 +11,26 @@
         font-size: 10vw;
         text-align: center;
         color: red;
+        z-index: 1;
     }
     
     body {
         background-color: black;
     }
-</style>
-<p id="time-difference">Loading...</p>
 
+    .background {
+        color:grey;
+        font-family: segmant;
+        font-size: 10vw;
+        text-align: center;
+        z-index: -1;
+    }
+
+    .timer {
+        position: relative;
+    }
+</style>
+<div class="timer">
+<p id="time-difference">Loading...</p>
+</div>
 <script src="call timer.js"></script>

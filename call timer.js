@@ -7,7 +7,7 @@
         const currentDate = new Date();
 
         // Set the target date and time to 5/28/2022, 5:52:10 PM AEST
-        const targetDate = new Date(2022, 4, 28, 17, 52, 10);
+        const targetDate = new Date(2022, 11, 22, 7, 27, 35);
 
         // Calculate the time difference between the current date and the target date
         const timeDifference = currentDate - targetDate;
