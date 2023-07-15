@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+    <title>New Years Countdown</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YD21YSTJQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-0YD21YSTJQ');
+    </script>
+    <meta property="og:title" content="New Years countdown" />
+    <meta property="og:description" content="The best new years countdown since 1984! Now with free Obama have dick music!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" />
+   
+</head>
+<style> 
+    @font-face {
+    font-family: segmant;
+    src: url(7segment.ttf) format(truetype);
+}
+
+p {
+    font-family: segmant;
+    font-size: 10vw;
+    text-align: center;
+    color: red;
+    z-index: 1;
+}
+
+body {
+    background-color: black;
+}
+
+.background {
+    color:grey;
+    font-family: segmant;
+    font-size: 10vw;
+    text-align: center;
+    z-index: -1;
+}
+
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.percent {
+    font-family: unset;
+    font-size: small;
+}
+
+.countdown {
+    font-size: 8vw;
+}
+</style>
+<div class="timer">
+    <p class="countdown" id="countdown">Loading...</h1>
+</div>
+
+<script src="counter.js"></script>
+<script src="percent.js"></script>
