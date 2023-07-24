@@ -25,6 +25,7 @@
     <meta name="google-site-verification" content="w3ZsaWbQv3I96QBKAQRPR-V17cLz0ixuQXH2VQ8qJr0" />
 
     <link rel="stylesheet" href="css/mainstyle.css">
+    
 
 </head>
 
@@ -79,10 +80,10 @@
         transition-duration: 0.5s;
     }
 
-    h2:hover {
+    /* h2:hover {
         transition-duration: 0.5s;
         font-size: 80px;
-    }
+    } */
 
     h3 {
         font-family: 'Bebas Neue', sans-serif; 
@@ -101,14 +102,16 @@
         background-color: rgba(255, 255, 255, 0.281);
         margin: 10px;
         transition-duration: 0.5s;
-        border: 1px solid black;
+        border: 2px solid black;
+        border-radius: 10px;
     }
 
     .team > div {
         background-color: rgba(255, 255, 255, 0.281);
         margin: 10px;
         transition-duration: 0.5s;
-        border: 1px solid black;
+        border: 2px solid black;
+        border-radius: 10px;
     }
 
 
@@ -125,11 +128,44 @@
         text-align: center;
     }
 
+    .teamlogo {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .video {
+        border-radius:10px;
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+    li {
+        float: left;
+        display: inline;
+    }
+
+    li a {
+        display: block;
+        padding: 8px;
+        background-color: #c6a800;
+        border-radius: 5px;
+        color: black;
+        opacity: 90%;
+        text-decoration: none;
+        font-family: 'Bebas Neue', sans-serif;    
+    }
 
 
 </style>
 
 <body>
+    <!-- <script src="../js/menu.js"></script> -->
+
     <h1>Professional Pronunciation</h1>
 
     <div class=subs><a href="https://www.youtube.com/@ProfessionalPronunciation"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCvQ4H9hDejkzhHw2tlN0nQQ?style=for-the-badge&logo=youtube&logoColor=%23ffd800&labelColor=%23050500&color=%23ffd800"></a></div>
@@ -143,18 +179,19 @@
     <p>Professional Pronunciation was founded in 2023 by XM9G with the aim to pronunce words in funny and engaging ways.</p> -->
     <h3>Our team</h3>
     <div class="team">
-        <div><img src="../Images/xm9g.png" width="160"><h3>XM9G</h3><p>Founder</p></div>
-        <div><img src="../Images/GamerPlayze.jpg" width="160"><h3>Gamerplayze</h3><p>Pronouncer</p></div>
+        <div><img src="../Images/xm9g.png" width="160" class="teamlogo"><h3>XM9G</h3><p>Founder</p></div>
+        <div><img src="../Images/GamerPlayze.jpg" width="160" class="teamlogo"><h3>Gamerplayze</h3><p>Pronouncer</p></div>
+        <!-- <div><img src="https://xm9g.windowsbad.com/U9b_nXvQRt.webp" width="160" class="teamlogo"><h3>Waldult</h3><p>Pronouncer</p></div> -->
     </div>
+    
     <p>We value your input and suggestions! Feel free to join our vibrant community on Discord by following the link below:</p>
     <div class=discord><iframe src="https://discord.com/widget?id=1121655831902036009&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
 
     <h3>Our work:</h3>
     <div class="videos">
-        <iframe width="auto" height="254" src="https://www.youtube-nocookie.com/embed/cUKgWjjQZss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="auto" height="254" src="https://www.youtube-nocookie.com/embed/v8922WoSRvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="auto" height="254" src="https://www.youtube-nocookie.com/embed/wRQGpdsYczU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+        <iframe width="auto" height="254" src="https://www.youtube-nocookie.com/embed/cUKgWjjQZss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
+        <iframe width="auto" height="254" src="https://www.youtube-nocookie.com/embed/v8922WoSRvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
+        <iframe width="auto" height="254" src="https://www.youtube-nocookie.com/embed/1MJOC69JRFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>    </div>
     <h2 id="merch">Merch:</h2>
     <p>You can support us by getting our t-shirts on Roblox:</p>
     <div class="shirts">
