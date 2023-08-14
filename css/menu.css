@@ -8,11 +8,13 @@ ul {
 li {
     float: left;
     display: inline;
+    padding-right: 10px;
+
 }
 
 li a {
     display: block;
-    padding: 8px;
+    padding-right: 10px;
     background-color: #000000;
     border-radius: 5px;
     color: white;
