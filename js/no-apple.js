@@ -8,5 +8,5 @@ function isAppleDevice() {
 // Redirect if the page is opened on an Apple device
 if (isAppleDevice()) {
     // Change 'destination-url' to the URL where you want to redirect
-    window.location.href = 'No-Apple.html'; // Replace with your destination URL
+    window.location.href = 'https://xm9g.github.io/No-Apple.html'; // Replace with your destination URL
 }

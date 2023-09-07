@@ -14,12 +14,13 @@ h1 {
     font-size: 70px;
     transition-duration: 1s;
     color: #fafafa;
+    filter: invert(0%);
 }
 
 h1:hover {
     /* font-size: 100px; */
-    transition-duration: 5s;
-    transform: rotateY(360deg);
+    transition-duration: 0.5s;
+    filter: invert(100%);
 }
 
 p {
