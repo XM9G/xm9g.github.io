@@ -58,9 +58,43 @@ body {
     font-size: 8vw;
 }
 </style>
-<div class="timer">
-    <p class="countdown" id="countdown">Loading...</h1>
-</div>
+    <div class="timer">
+        <p class="countdown" id="countdown">Loading...</h1>
+    </div>
+
+    <button id="fullscreenButton">Fullscreen</button>
+
+    <script>
+        const fullscreenButton = document.getElementById('fullscreenButton');
+
+        fullscreenButton.addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen()
+                    .then(() => {
+                        fullscreenButton.style.display = 'none';
+                    })
+                    .catch((err) => {
+                        console.error(`Error attempting to enable fullscreen: ${err.message}`);
+                    });
+            } else {
+                document.exitFullscreen()
+                    .then(() => {
+                        fullscreenButton.style.display = 'block';
+                    })
+                    .catch((err) => {
+                        console.error(`Error attempting to exit fullscreen: ${err.message}`);
+                    });
+            }
+        });
+
+        document.addEventListener('fullscreenchange', () => {
+            if (document.fullscreenElement === null) {
+                fullscreenButton.style.display = 'block';
+            } else {
+                fullscreenButton.style.display = 'none';
+            }
+        });
+    </script>
 
 <script src="counter.js"></script>
 <script src="percent.js"></script>
