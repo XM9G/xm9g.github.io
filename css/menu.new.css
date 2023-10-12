@@ -1,11 +1,11 @@
-ul {
+.menu ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 2%;
     overflow: hidden;
 }
 
-li {
+.menu li {
     float: left;
     display: inline;
     padding-right: 3px;
@@ -13,7 +13,7 @@ li {
 
 }
 
-li a, li p {
+.menu li a, .menu li p {
     display: block;
     /* padding-right: 10px; */
     padding: 5px;
@@ -28,9 +28,9 @@ li a, li p {
     
 }
 
-li a:hover {
-    background-color: aliceblue;
-    color: black;
+.menu li a:hover {
+    background-color: rgb(70, 70, 70);
+    /* color: black; */
     text-decoration: none;
     transition-duration: 0.5;
 

@@ -25,6 +25,7 @@
     <meta property="og:description"
         content="The best new years countdown since 1984! Now with free Obama have dick music!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" />
 
+    <link rel="stylesheet" href="../css/menu.css">
 </head>
 <style>
     @font-face {
@@ -68,55 +69,63 @@
         font-size: 8vw;
     }
 
-button {
-    background-color: darkred;
-    border: none;
-    color: black;
-    padding: 5px;
-    cursor: pointer;
-}
+    button {
+        background-color: darkred;
+        border: none;
+        color: black;
+        padding: 5px;
+        cursor: pointer;
+    }
 
-/* body:fullscreen  {
+    /* body:fullscreen  {
     cursor: no-drop;
 } */
 </style>
-<div class="timer">
-    <p class="countdown" id="countdown">Loading...</h1>
-</div>
 
-<button id="fullscreenButton">Fullscreen</button>
+<body>
+    
+    <div class="timer">
+        <p class="countdown" id="countdown">Loading...</h1>
+    </div>
 
-<script>
-    const fullscreenButton = document.getElementById('fullscreenButton');
+    <button id="fullscreenButton">Fullscreen</button>
 
-    fullscreenButton.addEventListener('click', () => {
-        if (!document.fullscreenElement) {
-            document.documentElement.requestFullscreen()
-                .then(() => {
-                    fullscreenButton.style.display = 'none';
-                })
-                .catch((err) => {
-                    console.error(`Error attempting to enable fullscreen: ${err.message}`);
-                });
-        } else {
-            document.exitFullscreen()
-                .then(() => {
-                    fullscreenButton.style.display = 'block';
-                })
-                .catch((err) => {
-                    console.error(`Error attempting to exit fullscreen: ${err.message}`);
-                });
-        }
-    });
+    <script>
+        const fullscreenButton = document.getElementById('fullscreenButton');
 
-    document.addEventListener('fullscreenchange', () => {
-        if (document.fullscreenElement === null) {
-            fullscreenButton.style.display = 'block';
-        } else {
-            fullscreenButton.style.display = 'none';
-        }
-    });
-</script>
+        fullscreenButton.addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen()
+                    .then(() => {
+                        fullscreenButton.style.display = 'none';
+                        menu.style.display = 'none';
+                    })
+                    .catch((err) => {
+                        console.error(`Error attempting to enable fullscreen: ${err.message}`);
+                    });
+            } else {
+                document.exitFullscreen()
+                    .then(() => {
+                        fullscreenButton.style.display = 'block';
+                        menu.style.display = 'block';
+                    })
+                    .catch((err) => {
+                        console.error(`Error attempting to exit fullscreen: ${err.message}`);
+                    });
+            }
+        });
 
-<script src="counter.js"></script>
-<script src="percent.js"></script>
+        document.addEventListener('fullscreenchange', () => {
+            if (document.fullscreenElement === null) {
+                fullscreenButton.style.display = 'block';
+            } else {
+                fullscreenButton.style.display = 'none';
+            }
+        });
+    </script>
+
+    <script src="counter.js"></script>
+    <script src="percent.js"></script>
+</body>
+
+</html>
