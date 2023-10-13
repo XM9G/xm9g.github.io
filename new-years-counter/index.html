@@ -98,7 +98,6 @@
                 document.documentElement.requestFullscreen()
                     .then(() => {
                         fullscreenButton.style.display = 'none';
-                        menu.style.display = 'none';
                     })
                     .catch((err) => {
                         console.error(`Error attempting to enable fullscreen: ${err.message}`);
@@ -107,7 +106,6 @@
                 document.exitFullscreen()
                     .then(() => {
                         fullscreenButton.style.display = 'block';
-                        menu.style.display = 'block';
                     })
                     .catch((err) => {
                         console.error(`Error attempting to exit fullscreen: ${err.message}`);
