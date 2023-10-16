@@ -7,7 +7,7 @@ function updateTimeDifference() {
   const currentDate = new Date();
 
   // Set the target date and time to 1674306987 UNIX timestamp
-  const targetDate = new Date(1697356867 * 1000);
+  const targetDate = new Date(1674306987 * 1000);
 
   // Calculate the time difference between the current date and the target date
   const timeDifference = currentDate - targetDate;
