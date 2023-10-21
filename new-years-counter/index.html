@@ -35,38 +35,39 @@
 
     p {
         font-family: segmant;
-        font-size: 10vw;
+        font-size: 200px;
         text-align: center;
         color: red;
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     body {
         background-color: black;
     }
 
-    .background {
+    /* .background {
         color: grey;
-        font-family: segmant;
         font-size: 10vw;
         text-align: center;
-        z-index: -1;
-    }
+        z-index: -1; 
+    } */
 
     .timer {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        font-family: segmant;
+
     }
 
     .percent {
         font-family: unset;
-        font-size: small;
+        font-size: 100px;
     }
 
     .countdown {
-        font-size: 8vw;
+        /* font-size: 8vw; */
     }
 
     button {
@@ -85,7 +86,9 @@
 <body>
     
     <div class="timer">
-        <p class="countdown" id="countdown">Loading...</h1>
+        <p class="countdown" id="countdown">Loading...</p>
+        <!-- <p class="percent" id="percent">Loading...</p> -->
+        
     </div>
 
     <button id="fullscreenButton">Fullscreen</button>
@@ -98,6 +101,7 @@
                 document.documentElement.requestFullscreen()
                     .then(() => {
                         fullscreenButton.style.display = 'none';
+                        percent.style.display = 'none';
                     })
                     .catch((err) => {
                         console.error(`Error attempting to enable fullscreen: ${err.message}`);
