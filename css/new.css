@@ -3,7 +3,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    
+    background-image: linear-gradient(black, blue);
 
 }
 .discord {
@@ -99,5 +99,5 @@ h2 {
 
 .project-box li p {
     /* margin-right: 50%; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
