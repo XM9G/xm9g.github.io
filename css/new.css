@@ -71,7 +71,7 @@ h2 {
     margin-right: 20%;
 }
 
-.project-box li {
+.project-box {
     font-family: 'Bebas Neue', sans-serif;
     background-color: grey;
     margin-bottom: 5px;
@@ -100,4 +100,8 @@ h2 {
 .project-box li p {
     /* margin-right: 50%; */
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
