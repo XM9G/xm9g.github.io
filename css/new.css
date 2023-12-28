@@ -15,7 +15,7 @@ body {
     text-align: center; 
     font-size: 8vw;
     /* transition-duration: 1s; */
-    color: black;
+    color: rgb(255, 255, 255);
     filter: invert(0%);
     margin: 0 !important;
     padding: 0 !important;
@@ -47,7 +47,7 @@ h1 {
 .cover {
     
         height: 100vh;
-        background-image: url(/Images/cj4dirty.png);
+        background-image: url(/Images/comeng.jpeg);
         background-size: cover;
         background-position: center;
         text-align: center;    
