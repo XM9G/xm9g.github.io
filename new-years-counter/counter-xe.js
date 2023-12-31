@@ -33,7 +33,7 @@ function updateCountdown() {
 }
 
 // Update the countdown every 1 second
-setInterval(updateCountdown, 1000);
+setInterval(updateCountdown, 100);
 
 // Update the countdown initially
 updateCountdown();
