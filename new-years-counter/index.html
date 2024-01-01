@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-
 <head>
-    <title>New Years Countdown</title>
+    <title>New Years Countdowns</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YD21YSTJQ"></script>
@@ -21,11 +19,11 @@
         })(window, document, "clarity", "script", "j7aj4ugn2d");
     </script>
 
-    <meta property="og:title" content="New Years countdown" />
+    <meta property="og:title" content="New Years countdowns" />
     <meta property="og:description"
-        content="The best new years countdown since 1984! Now with free Obama have dick music!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" />
+        content="New years countdowns with optional automatic Xenogenesis or Obama beat drops" />
 
-    <link rel="stylesheet" href="../css/menu.css">
+    <!-- <link rel="stylesheet" href="../css/menu.css"> -->
 </head>
 <style>
     @font-face {
@@ -33,50 +31,48 @@
         src: url(7segment.ttf) format(truetype);
     }
 
-    p {
-        font-family: segmant;
-        font-size: 200px;
-        text-align: center;
+    h1 {
         color: red;
-        /* z-index: 1; */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 100px;
+    } 
+
+    p {
+        color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        background-color: grey;
+    }
+    a {
+        text-decoration: none;
+        color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    ul {
+        padding-left: 20%;
+        padding-right: 20%;
+        list-style-type: none;
+    }
+
+    li {
+        background-color: #444444;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    li:hover {
+        background-color: grey;
     }
 
     body {
         background-color: black;
     }
 
-    /* .background {
-        color: grey;
-        font-size: 10vw;
-        text-align: center;
-        z-index: -1; 
-    } */
-
-    .timer {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: segmant;
-
-    }
-
-    .percent {
-        font-family: unset;
-        font-size: 100px;
-    }
-
-    .countdown {
-        /* font-size: 8vw; */
-    }
-
-    button {
-        background-color: darkred;
-        border: none;
-        color: black;
-        padding: 5px;
-        cursor: pointer;
-    }
 
     /* body:fullscreen  {
     cursor: no-drop;
@@ -84,50 +80,13 @@
 </style>
 
 <body>
-    
-    <div class="timer">
-        <p class="countdown" id="countdown">Loading...</p>
-        <!-- <p class="percent" id="percent">Loading...</p> -->
-        
-    </div>
+    <h1>Select a countdown</h1>
+    <br>
+    <ul>
+        <a href="Xenogenesis.html"><li>Xenogenesis</li></a>
+        <a href="no.html"><li>No Music</li></a>
+        <a href="obama.html"><li>Obama</li></a>
 
-    <button id="fullscreenButton">Fullscreen</button>
-
-    <script>
-        const fullscreenButton = document.getElementById('fullscreenButton');
-
-        fullscreenButton.addEventListener('click', () => {
-            if (!document.fullscreenElement) {
-                document.documentElement.requestFullscreen()
-                    .then(() => {
-                        fullscreenButton.style.display = 'none';
-                        percent.style.display = 'none';
-                    })
-                    .catch((err) => {
-                        console.error(`Error attempting to enable fullscreen: ${err.message}`);
-                    });
-            } else {
-                document.exitFullscreen()
-                    .then(() => {
-                        fullscreenButton.style.display = 'block';
-                    })
-                    .catch((err) => {
-                        console.error(`Error attempting to exit fullscreen: ${err.message}`);
-                    });
-            }
-        });
-
-        document.addEventListener('fullscreenchange', () => {
-            if (document.fullscreenElement === null) {
-                fullscreenButton.style.display = 'block';
-            } else {
-                fullscreenButton.style.display = 'none';
-            }
-        });
-    </script>
-
-    <script src="counter.js"></script>
-    <script src="percent.js"></script>
+    </ul>
+      
 </body>
-
-</html>

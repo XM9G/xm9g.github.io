@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Obama | New Years Countdown</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YD21YSTJQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0YD21YSTJQ');
+    </script>
+
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "j7aj4ugn2d");
+    </script>
+
+    <meta property="og:title" content="New Years countdown with obama music" />
+    <meta property="og:description"
+        content="The best new years countdown since 1984! Now with free Obama have dick music!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" />
+
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<style>
+    @font-face {
+        font-family: segmant;
+        src: url(7segment.ttf) format(truetype);
+    }
+
+    p {
+        font-family: segmant;
+        font-size: 200px;
+        text-align: center;
+        color: red;
+        /* z-index: 1; */
+    }
+
+    body {
+        background-color: black;
+    }
+
+    /* .background {
+        color: grey;
+        font-size: 10vw;
+        text-align: center;
+        z-index: -1; 
+    } */
+
+    .timer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: segmant;
+
+    }
+
+    .percent {
+        font-family: unset;
+        font-size: 100px;
+    }
+
+    .countdown {
+        /* font-size: 8vw; */
+    }
+
+    button {
+        background-color: darkred;
+        border: none;
+        color: black;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    /* body:fullscreen  {
+    cursor: no-drop;
+} */
+</style>
+
+<body>
+    
+    <div class="timer">
+        <p class="countdown" id="countdown">Loading...</p>
+        <!-- <p class="percent" id="percent">Loading...</p> -->
+        
+    </div>
+
+    <button id="fullscreenButton">Fullscreen</button>
+
+    <script>
+        const fullscreenButton = document.getElementById('fullscreenButton');
+
+        fullscreenButton.addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen()
+                    .then(() => {
+                        fullscreenButton.style.display = 'none';
+                        percent.style.display = 'none';
+                    })
+                    .catch((err) => {
+                        console.error(`Error attempting to enable fullscreen: ${err.message}`);
+                    });
+            } else {
+                document.exitFullscreen()
+                    .then(() => {
+                        fullscreenButton.style.display = 'block';
+                    })
+                    .catch((err) => {
+                        console.error(`Error attempting to exit fullscreen: ${err.message}`);
+                    });
+            }
+        });
+
+        document.addEventListener('fullscreenchange', () => {
+            if (document.fullscreenElement === null) {
+                fullscreenButton.style.display = 'block';
+            } else {
+                fullscreenButton.style.display = 'none';
+            }
+        });
+    </script>
+
+    <script src="counter.js"></script>
+    <script src="percent.js"></script>
+</body>
+
+</html>
