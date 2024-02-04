@@ -3,35 +3,15 @@
 }
 
 body {
-    background-image: url(/Images/comeng.jpeg);
+    background-image: url(/Images/towers.jpg);
     background-attachment: fixed;
-    background-size: contain;
-}
-
-
-.heading {
-    background-color:#ffffff1a;
-    backdrop-filter: blur(5px);
-    height: 5%;
     background-size: cover;
-    width: 50%;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    min-width: 70%;
-    /* box-shadow: 1px 2px 2px 2px rgb(0, 0, 0); */
+    backdrop-filter: blur(10px);
+    height: 100vh;
+
 }
 
 h1 {
     text-align: center;
-    padding: 1%;
-    text-shadow: 5px 5px #292c36;
-    font-size: 50px;
-    color: white;
-    font-family: sans-serif;
-    word-wrap: break-word;
-    font-size: 1000%;
-
+    padding-top: ;
 }
