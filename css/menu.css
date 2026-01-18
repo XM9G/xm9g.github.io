@@ -17,7 +17,7 @@ li a, li p {
     display: block;
     /* padding-right: 10px; */
     padding: 5px;
-    background-color: #000000;
+    background: rgba(0, 0, 0, 0.181); /* Updated for better opacity handling */
     border-radius: 5px;
     color: white;
     opacity: 90%;
@@ -25,18 +25,12 @@ li a, li p {
     font-family: 'Lexend Deca', sans-serif;
     transition-duration: 0.5;
     text-decoration: none;
-    
+    backdrop-filter: blur(10px);
+    transition: all 0.5s;
 }
 
 li a:hover {
-    background-color: aliceblue;
-    color: black;
+    background: rgba(0, 0, 0, 0.429); /* Updated for better opacity handling */
+    /* color: black; */
     text-decoration: none;
-    transition-duration: 0.5;
-
-    
 }
-
-/* a:link !im {
-    text-decoration: none;
-} */
