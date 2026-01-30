@@ -17,6 +17,28 @@
     backdrop-filter: blur(10px);
 }
 
+@media (max-width: 600px) {
+    .headingthing {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+        max-width: 100vw;
+        max-height: 100vh;
+        transform: none;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 7vw;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
 p {
     padding-left: 10px;
     padding-right: 10px;
@@ -67,11 +89,47 @@ body {
     padding: 1px 1px
 }
 
+.buttonLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.buttonLinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonLinks li {
+    display: inline-block;
+    padding-right: 3px;
+    padding-top: 3px;
+}
+
+.buttonLinks li a {
+    display: block;
+    /* padding-right: 10px; */
+    padding: 5px;
+    /* background: rgba(0, 0, 0, 0.181); Updated for better opacity handling */
+    border-radius: 5px;
+    color: white;
+    opacity: 90%;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    transition-duration: 0.5;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    transition: all 0.5s;
+}
 
 
 a:link {
     text-decoration: none;
 }
 
-.Name {
-}
