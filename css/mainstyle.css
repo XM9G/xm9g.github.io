@@ -91,6 +91,7 @@ body {
 
 .buttonLinks {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -102,14 +103,16 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .buttonLinks li {
-    display: inline-block;
-    padding-right: 3px;
+    display: block;
+    padding-right: 0;
     padding-top: 3px;
+    margin-bottom: 5px;
 }
 
 .buttonLinks li a {
